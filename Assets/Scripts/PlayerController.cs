@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour {
         SetCountText();
     }
 
+    void Update()
+    {
+        if (Input.GetKey("escape")) Application.Quit();
+    }
+
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
